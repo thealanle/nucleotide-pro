@@ -50,3 +50,8 @@ form {
 html {
     height: 100%;
 }
+
+.nucleotide {
+    font-family: "Courier New", Courier, monospace;
+    width: 400px
+}
