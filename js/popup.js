@@ -33,6 +33,6 @@ function callExpasy(dna_sequence) {
 
 
 document.getElementById("nucleotide-form").addEventListener('submit', function(e) {
-   // e.preventDefault();
+   e.preventDefault();
    getOutput();
 })
