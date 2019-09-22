@@ -1,21 +1,26 @@
 {
-  "name": "Extension Scaffold",
-  "version": "1.0",
-  "description": "A study in Chrome extensions",
-  "manifest_version": 2,
+    "name": "Extension Scaffold",
+    "version": "1.0",
+    "description": "A study in Chrome extensions",
+    "manifest_version": 2,
 
-  "incognito": "split",
+    "incognito": "split",
 
-  "chrome_url_overrides": {
-    "newtab": "index.html"
-  },
+    "chrome_url_overrides": {
+        "newtab": "html/index.html"
+    },
 
-  "permissions": [
-     "activeTab",
-     "contextMenus"
-   ],
+    "browser_action": {
+        "default_popup": "html/popup.html"
+    },
 
-"icons": {
-    "128": "icon.png"
+    "permissions": [
+        "activeTab",
+        "contextMenus",
+        "https://web.expasy.org/cgi-bin/translate/*"
+    ],
+
+    "icons": {
+        "128": "icon.png"
     }
 }

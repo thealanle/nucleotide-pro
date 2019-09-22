@@ -25,7 +25,7 @@ if (userName == null) {
 }
 
 document.getElementById("name-form").addEventListener('submit', function(e) {
-   e.preventDefault()
+   e.preventDefault();
    changeName();
    location.reload();
 
