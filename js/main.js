@@ -12,7 +12,7 @@ function changeName() {
 }
 
 function getGreeting() {
-   document.getElementById("greeting").innerHTML  = `Hello, ${userName}. Enjoy your day!`;
+   document.getElementById("greeting").innerHTML  = `Hello, ${userName}`;
 }
 
 
