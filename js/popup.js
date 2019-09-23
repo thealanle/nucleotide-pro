@@ -26,7 +26,14 @@ function callExpasy(dna_sequence) {
     }
 }
 
-document.getElementById("nucleotide-form").addEventListener('submit', function(e) {
-   e.preventDefault();
-   getOutput();
+function clearResults() {
+    document.getElementById("form-input").innerHTML = "";
+    document.getElementById("form-output").innerHTML = "";
+}
+
+var thisForm = document.getElementById("nucleotide-form");
+thisForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    clearResults();
+    getOutput();
 })

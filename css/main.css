@@ -18,14 +18,8 @@ h2 {
     text-align: center;
 }
 
-input {
-    padding: 5px;
-    font-size: 12px;
-    width: 150px;
-    height: 20px;
-}
 
-button {
+input[type="button"] {
     text-align: center;
     margin: auto;
     color: #FFFFFF;
