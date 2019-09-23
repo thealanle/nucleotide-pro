@@ -1,28 +1,29 @@
 <html>
-    <head>
-        <title>nucleotide-pro</title>
-        <link rel="stylesheet" type="text/css" href="../css/main.css">
-    </head>
 
-    <body>
-        <h1>Nucleotide-Pro</h1>
+<head>
+    <title>nucleotide-pro</title>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
 
-        <div class="form-input">
-            <form class="nucleotide-form" id="nucleotide-form" action="submit">
-                <textarea name="input_sequence" rows="5" cols="30" placeholder="Enter nucleotide string...">ATGGTAGTGTGATAAAAGATAGAGTA</textarea>
+<body>
+    <h1>Nucleotide-Pro</h1>
 
-                <br>
-                <input type="button" id="submit-button" value="Submit">
-                <input type="button" id="go-to-expasy" value="Open in ExPASy Translate">
-        </div>
+    <div class="form-input">
+        <form class="nucleotide-form" id="nucleotide-form" action="submit">
 
-        <div class="results">
-            <p class="nucleotide" id="form-input"></p>
-            <p class="nucleotide" id="form-output"></p>
-        </div>
+            <textarea name="input_sequence" rows="5" cols="30" placeholder="Enter nucleotide string..."></textarea>
 
-    </body>
+            <br>
 
-    <script type="text/javascript" src=../js/popup.js></script>
+            <input type="button" id="submit-button" value="Submit">
+            <input type="button" id="go-to-expasy" value="Open in ExPASy Translate">
+    </div>
 
-</html>
+    <div class="results">
+        <p class="nucleotide" id="form-input"></p>
+        <p class="nucleotide" id="form-output"></p>
+    </div>
+
+</body>
+
+<script type="text/javascript" src=../js/popup.js> </script> </html>
