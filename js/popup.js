@@ -13,7 +13,7 @@ function getOutput() {
 function callExPASy(dna_sequence) {
     var result = "NULL";
     var xhr = new XMLHttpRequest();
-    var url = "https://web.expasy.org/cgi-bin/translate/dna2aa.cgi"
+    var url = "https://web.expasy.org/cgi-bin/translate/dna2aa.cgi";
     var params = "dna_sequence=" + dna_sequence + "&output_format=fasta";
 
     document.getElementById("form-input").innerHTML = `<h2>Input:</h2>${dna_sequence}`;
@@ -34,7 +34,7 @@ function callExPASy(dna_sequence) {
 }
 
 function openExPASy(dna_sequence) {
-    var param = "?dna_sequence=" + dna_sequence
+    var param = "?dna_sequence=" + dna_sequence;
     window.open("https://web.expasy.org/cgi-bin/translate/dna2aa.cgi" + param, "_blank");
 }
 
