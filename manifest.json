@@ -1,7 +1,7 @@
 {
-    "name": "Extension Scaffold",
+    "name": "nucleotide-pro",
     "version": "1.0",
-    "description": "A study in Chrome extensions",
+    "description": "Easy access to nucleotide translations",
     "manifest_version": 2,
 
     "incognito": "split",
