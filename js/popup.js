@@ -1,3 +1,6 @@
+const button1 = document.getElementByID("submit-button")
+const button2 = document.getElementByID("go-to-expasy")
+
 function getOutput() {
     var nucInput = document.getElementById("nucleotide-input").value;
     document.getElementById("form-input").innerHTML = `<h2>Input:</h2>${nucInput}`;
