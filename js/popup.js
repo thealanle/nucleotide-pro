@@ -1,8 +1,10 @@
-const button1 = document.getElementByID("submit-button")
-const button2 = document.getElementByID("go-to-expasy")
+const nucForm = document.getElementById("nucleotide-form");
+const button1 = document.getElementById("submit-button");
+const button2 = document.getElementById("go-to-expasy");
+
 
 function getOutput() {
-    var nucInput = document.getElementById("nucleotide-input").value;
+    var nucInput = nucForm.value;
     document.getElementById("form-input").innerHTML = `<h2>Input:</h2>${nucInput}`;
     callExpasy(nucInput);
 
@@ -29,14 +31,26 @@ function callExpasy(dna_sequence) {
     }
 }
 
+function openExPASy() {
+    window.open("https://web.expasy.org/cgi-bin/translate/dna2aa.cgi", "_blank");
+}
+
 function clearResults() {
     document.getElementById("form-input").innerHTML = "";
     document.getElementById("form-output").innerHTML = "";
 }
 
-var thisForm = document.getElementById("nucleotide-form");
-thisForm.addEventListener('submit', function(e) {
+
+
+button1.addEventListener('click', function(e) {
     e.preventDefault();
     clearResults();
     getOutput();
+})
+
+button2.addEventListener('click', function(e) {
+    e.preventDefault();
+    clearResults();
+    openExPASy();
+
 })
