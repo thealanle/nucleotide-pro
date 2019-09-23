@@ -1,53 +1,28 @@
-.settings {
-    display: none;
-    flex-direction: row;
-    align-content: center;
-    /* transform: translateX(-75%); */
-    transition: transform 1s;
+html {
+    height: 100%;
+    width: 400px;
+    font-family: Helvetica, Helvetica, sans-serif;
 }
 
-.settings-open.settings {
-    /* transform: none; */
-    display: flex;
-}
-h1 {
+h1, h2, h5 {
     text-align: center;
 }
-
-h2 {
-    text-align: center;
-}
-
 
 input[type="button"] {
     text-align: center;
     margin: auto;
     color: #FFFFFF;
-    background-color: #3440e3;
-    border-radius: 6px;
-}
+    background-color: #2537fa;
+    border-radius: 8px;
+    padding: 5px;
+    }
 
 form {
-    padding-top: 20px;
+    margin: auto;
+    text-align: center;
 }
 
-.greeting-container {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-.greeting {
-    font-family: sans-serif;
-    font-size: 60px;
-}
-
-
-html {
-    height: 100%;
-}
 
 .nucleotide {
     font-family: "Courier New", Courier, monospace;
-    width: 400px
 }
