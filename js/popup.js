@@ -46,12 +46,12 @@ function clearResults() {
 button1.addEventListener('click', function(e) {
     e.preventDefault();
     clearResults();
-    callExPASy(document.getElementsByName("input_sequence")[0].value);
+    callExPASy(document.getElementById("input_sequence").value);
 })
 
 button2.addEventListener('click', function(e) {
     e.preventDefault();
     clearResults();
-    openExPASy(document.getElementsByName("input_sequence")[0].value);
+    openExPASy(document.getElementById("input_sequence").value);
 
 })
