@@ -12,7 +12,8 @@
 
     "permissions": [
         "activeTab",
-        "contextMenus"
+        "contextMenus",
+        "https://web.expasy.org/cgi-bin/translate/*"
     ],
 
     "icons": {
