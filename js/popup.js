@@ -16,7 +16,7 @@ function callExPASy(dna_sequence) {
     var url = "https://web.expasy.org/cgi-bin/translate/dna2aa.cgi";
     var params = "dna_sequence=" + dna_sequence + "&output_format=fasta";
 
-    document.getElementById("form-input").innerHTML = `<h2>Input:</h2>${dna_sequence}`;
+    document.getElementById("form-input").innerHTML = `<h2 class=result-header>Input:</h2><div class=result>${dna_sequence}</div>`;
 
     xhr.open("POST", url);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
@@ -25,7 +25,7 @@ function callExPASy(dna_sequence) {
     xhr.onload = function() {
         if (xhr.status = 200) {
             result = xhr.responseText.replace(/\n>/g, "\n\n>").replace(/\n/g, "<br>")
-            document.getElementById("form-output").innerHTML = `<h2>Output:</h2>${result}`;
+            document.getElementById("form-output").innerHTML = `<h2 class=result-header>Output:</h2>${result}`;
         } else {
             document.getElementById("form-output").innerHTML = `unable to get translation`;
             alert("failed");

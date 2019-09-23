@@ -12,7 +12,7 @@ input[type="button"] {
     text-align: center;
     margin: auto;
     color: #FFFFFF;
-    background-color: #2537fa;
+    background-color: blue;
     border-radius: 8px;
     padding: 5px;
     }
@@ -23,6 +23,19 @@ form {
 }
 
 
-.nucleotide {
+.nucleotide, .protein {
     font-family: "Courier New", Courier, monospace;
+}
+
+
+.results {
+    width: 350px;
+    margin: auto;
+    word-wrap: break-word;
+    color: blue;
+}
+
+.result-header {
+    font-family: Helvetica, Helvetica, sans-serif;
+    color: black;
 }
