@@ -4,7 +4,7 @@ const button2 = document.getElementById("go-to-expasy");
 
 
 function getOutput() {
-    var nucInput = document.getElementsByName("input_sequence")[0].value;
+    var nucInput = document.getElementsById("input_sequence").value.replace(/\s+/g, '');
     document.getElementById("form-input").innerHTML = `<h2>Input:</h2>${nucInput}`;
     callExPASy(nucInput);
 
@@ -46,12 +46,12 @@ function clearResults() {
 button1.addEventListener('click', function(e) {
     e.preventDefault();
     clearResults();
-    callExPASy(document.getElementsByName("input_sequence")[0].value);
+    callExPASy(document.getElementById("input_sequence").value);
 })
 
 button2.addEventListener('click', function(e) {
     e.preventDefault();
     clearResults();
-    openExPASy(document.getElementsByName("input_sequence")[0].value);
+    openExPASy(document.getElementById("input_sequence").value);
 
 })
