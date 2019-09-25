@@ -4,7 +4,7 @@ const button2 = document.getElementById("go-to-expasy");
 
 
 function getOutput() {
-    var nucInput = document.getElementsById("input_sequence").value.replace(/\s+/g, '');
+    var nucInput = document.getElementById("input_sequence").value.replace(/\s+/g, '');
     document.getElementById("form-input").innerHTML = `<h2>Input:</h2>${nucInput}`;
     callExPASy(nucInput);
 
